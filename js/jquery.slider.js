@@ -31,7 +31,7 @@
 			content.push("<button type='button' class='nextBtn' id='nextBtn'>></button>");
 			content.push("<ul class='sliderUl'>");
 			for(var i = 0; i < len; i++) {
-				content.push("<li class='sliderLi'><a><img class='block' src=" + imgArr[i] + "></a>" + i + "</li>")
+				content.push("<li class='sliderLi'><a><img class='block' src=" + imgArr[i] + ">" + i + "</a></li>")
 			}
 			content.push("<li class='sliderLi'><img class='block' src=" + imgArr[0] + ">" + i + "</li></ul>");
 			content.push("<ul class='pointer'>");
@@ -78,7 +78,6 @@
 			var i = me.options.current,
 				vWidth = me.options.vWidth,
 				len = me.options.len;
-			
 			me.element.children('.sliderUl').css({
 				"-webkit-transform": "translateX(" + (-i * vWidth) + "px)",
 				"transform": "translateX(" + (-i * vWidth) + "px)",
@@ -128,5 +127,3 @@
 		return new Sliders($(this), options);
 	}
 })(jQuery, window, document);
-
-

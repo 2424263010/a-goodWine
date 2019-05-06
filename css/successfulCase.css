@@ -1,0 +1,264 @@
+body,ul,li,figcaption,figure,h4{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+
+header{
+	width: 100%;
+	height: 80px;
+	background: #fff;	
+}
+header div{
+	width: 1200px;
+	height: 80px;
+	margin: 0 auto;
+	background: url(../img/successbg1.png) no-repeat left center;
+}
+header div ul{
+	width: 840px;
+	height: 32px;
+	float: right;
+	margin-top: 30px;
+}
+header ul li{
+	height: 32px;
+	line-height: 32px;
+	background: #f00;
+	float: left;
+	position: relative;
+}
+header ul li:nth-child(1){
+	margin-left: 40px;
+}
+header ul li:nth-child(2){
+	margin-left: 46px;
+}
+header ul li:nth-child(3){
+	margin-left: 62px;
+}
+header ul li:nth-child(4){
+	margin-left: 61px;
+}
+header ul li:nth-child(5){
+	margin-left: 52px;
+}
+header ul li:nth-child(6){
+	margin-left: 60px;
+}
+header ul li:nth-child(7){
+	margin-left: 40px;
+}
+
+header ul li a{
+	display: inline-block;
+	height: 32px;
+	color: #333333;
+	font-size: 16px;
+	background: white;
+}
+header ul li a:hover{
+	height: 30px;
+}
+header ul li span{
+	position: absolute;
+	top: 13px;
+	right:-10px ;
+	width: 8px;
+	height: 5px;
+	background: url(../img/successbg2.png) no-repeat center;
+}
+
+
+
+.logo{
+	width: 100%;
+	height: 560px;
+	background: url(../img/seccessbg3.png) no-repeat left center;
+	background-position-x:center ;
+}
+
+.zixun{
+	width: 100%;
+	height: 135px;
+	background: #eeeeee;
+}
+.zixun div{
+	width: 1000px;
+	height: 135px;
+	margin: 0 auto;
+}
+.zixun figure{
+	width: 144px;
+	height: 135px;
+	float: left;
+	padding-top: 12px;
+	box-sizing: border-box;
+}
+.zixun figure:last-child{
+	width: 232px;
+}
+.zixun figure:last-child img{
+	width: 205px;
+	height: 80px;
+}
+.zixun figure a{
+	margin-left: 33px;
+}
+.zixun figcaption{
+	width: 144px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 16px;
+	text-align: center;
+	margin-top: 5px;
+}
+.zixun figure .teshu{
+	width: 232px;
+	height: 20px;
+}
+.zixun figcaption a{
+	color:#444444 ;
+	margin-left: 0;
+}
+.zixun figcaption a:hover{
+	color: red;
+}
+
+.koubei{
+	width: 100%;
+	height: 936px;
+	border: 1px solid #eeeeee;
+}
+.koubei_top{
+	width: 1200px;
+	height: 202px;
+	margin: 0 auto;
+	padding-top: 50px;
+	box-sizing: border-box;
+}
+.koubei_top div{
+	width: 694px;
+	height: 60px;
+	margin: 0 auto;
+}
+.koubei_top h4{
+	width: 1200px;
+	height: 40px;
+	font-weight: normal;
+	line-height: 40px;
+	text-align: center;
+	color: #888888;
+	font-size: 18px;
+}
+.koubei_top span{
+	display: block;
+	width: 80px;
+	height: 38px;
+	line-height: 38px;
+	font-size: 12px;
+	margin:15px 0 0 1120px;
+}
+.koubei_top span a{
+	color: #444444;
+	float: right;
+}
+.koubei_top span a:hover{
+	color: red;
+}
+
+.koubei_bottom{
+	width: 1200px;
+	height: 730px;
+	background: #f0f;
+	margin: 0 auto;
+}
+
+.changjia{
+	width: 1200px;
+	height: 490px;
+	margin: 0 auto;
+}
+.changjia_top{
+	width: 1200px;
+	height: 202px;
+	margin: 0 auto;
+	padding-top: 50px;
+	box-sizing: border-box;
+}
+.changjia_top div{
+	width: 694px;
+	height: 60px;
+	margin: 0 auto;
+}
+.changjia_top h4{
+	width: 1200px;
+	height: 40px;
+	font-weight: normal;
+	line-height: 40px;
+	text-align: center;
+	color: #888888;
+	font-size: 18px;
+}
+.changjia_top span{
+	display: block;
+	width:1200px;
+	height: 38px;
+	line-height: 38px;
+	font-size: 18px;
+	font-weight: bold;
+	padding-left: 15px;
+	box-sizing: border-box;
+	margin-top:15px;
+	color: white;
+	background: #cc0000;
+}
+.changjia_top span a{
+	color: white;
+	float: right;
+	font-weight: normal;
+	margin-right: 10px;
+	font-size: 14px;
+}
+.changjia_top span a:hover{
+	color: #000;
+}
+.changjia_bottom{
+	padding:10px 0 0 15px ;
+	box-sizing: border-box;
+}
+.changjia_bottom ul{
+	width: 370px;
+	height: ;
+	margin-right:25px ;
+	float: left;
+}
+.changjia_bottom ul li{
+	width: 360px;
+	height: 32px;
+	line-height: 32px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 14px;
+	background: url(../img/point.png) no-repeat left center;
+	padding-left: 5px;
+	box-sizing: border-box;
+	margin-left:10px ;
+}
+.changjia_bottom li a{
+	color: #444444;
+}
+.changjia li a:hover{
+	color: red;
+}
+.kefu{
+	width: 100%;
+	height: 945px;
+	background: url(../img/successbg11.png) no-repeat center;
+}

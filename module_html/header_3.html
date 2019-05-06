@@ -1,141 +1,78 @@
+<!--
+	页面头部第四块
+	是一个导航栏、列出了所浏览公司的一些可浏览的选项
+-->
 
-	<div class="sousuo">
-		<div class="sousuo01">
-			<img src="img/logo.png" />
+<ul>
+	<li class="dw"><a href="gssy.html">公司首页</a></li>
+	<li>
+		<a href="gsjs.html">公司介绍</a>
+		<div class="oHide">
+			<p><a href="">企业荣誉</a></p>
+			<p><a href="">公司档案</a></p>
+		</div>		
+	</li>
+	<li><a href="zscp.html">招商产品</a></li>
+	<li>
+		<a href="qyxw.html">企业新闻</a>
+		<div class="oHide">
+			<p><a href="">参展动态</a></p>
 		</div>
-		<div class="sousuo02">
-			<div class="searchbox">
-				<div class="mod_select">
-					<div class="select_box">
-						<span class="select_txt">产品</span>
-						<span class="select-icon"></span>
-						<ul class="option">
-							<li>茅台</li>
-							<li>五粮液</li>
-							<li>老村长</li>
-						</ul>
-					</div>
-				</div>
-				<form action="">
-					<input type="hidden" name="" value="服装" id="select_value">
-					<input type="text" name="" id="searchPlaceholder" class="import" placeholder="">
-					<input type="submit" value="搜   索" class="btn-search">
-				</form>
-			</div>
-			<div class="searchWine">
-				<label>
-					<a>热搜：</a>
-					<a href="#">老白干</a>
-					<a href="#">实诚人家</a>
-					<a href="#">百年二锅头</a>
-				</label>
-			</div>
-		</div>
-		<div class="sousuo03">
-			<img src="img/xsfj.gif" />
-		</div>
-	</div>
+		
+	</li>
+	<li>
+		<a href="zszc.html">招商政策</a>
+		<div class="oHide">
+			<p><a href="">加盟问答</a></p>
+		</div>		
+	</li>
+	<li><a href="lxfs.html">申请代理</a></li>
+	<li><a href="lxfs.html">联系方式</a></li>
+	<li><a href="zxns.html">招贤纳士</a></li>
+</ul>
 
 
 <style type="text/css">
-			.sousuo{
-				width: 1200px;
-				margin: 20px auto;
-				display: flex;
-				justify-content: space-between;
-			}
-
-			.sousuo02 {
-			  position: relative;
-			  z-index: 1;
-			  clear: both;
-			  width: 300px;
-			  height: 40px;
-			  float: left;
-			  border: 2px solid red;
-			}
-			.mod_select {
-			  position: absolute;
-			  left: 0;
-			  top: 0;
-			  width: 98px;
-			}
-			.mod_select .select_box {
-			  position: relative;
-			  width: 50px;
-			  height: 36px;
-			}
-			.mod_select .select_box .select_txt {
-			  display: inline-block;
-			  width: 68px;
-			  height: 40px;
-			  overflow: hidden;
-			  line-height: 36px;
-			  text-align: center;
-			  font-size: 12px;
-			  background: aliceblue;
-			  cursor: pointer;
-			}
-			.mod_select .select_box .select-icon {
-			  position: absolute;
-			  top: 50%;
-			  right: -17px;
-			  transform: translate(0,-50%);
-			  width: 10px;
-			  height: 10px;
-			  background: url(img/search_ico.png) center no-repeat;
-			}
-			.mod_select .select_box .option {
-			  display: none;
-			  position: absolute;
-			  top: 40px;
-			  left: -2px;
-			  width: 70px;
-			  background-color: #fff;
-			  border: 2px solid #444786;
-			  border-top: 0;
-			}
-			.mod_select .select_box .option li {
-			 text-align: center;
-			  font-size: 12px;
-			  line-height: 2;
-			  cursor: pointer;
-			}
-			.searchbox .import {
-			  width: 150px;
-			  height: 40px;
-			  margin-left: 80px;
-			  border: none;
-			  outline: none;
-			}
-			.searchbox .btn-search {
-			  position: absolute;
-			  right: 0;
-			  width: 80px;
-			  height: 40px;
-			  color: #fff;
-			  background-color: #444786;
-			  border: 0;
-			}
-			.sousuo03{
-				width: 500px;
-				/*background: red;*/
-				float: right;
-			}
-			.sousuo01{
-				width: 205px;
-				height: 74px;
-				
-			}
-			.searchWine{
-				display: flex;
-				justify-content: space-between;
-				align-content: center;
-				margin-top: 5px;
-			}
-			.searchWine label{
-				margin-right: 15px;
-				margin-top: 5px;
-				font-size: 12px;
-			}
+	#header_3>ul{
+		width: 1200px;
+		margin: 0 auto;
+		position: relative;
+	}
+	#header_3>ul li{
+		width: 120px;
+		height: 36px;
+		line-height: 36px;
+		text-align: center;
+		float: left;
+		z-index: 1;
+	}
+	#header_3>ul>li a{
+		color: white;
+	}
+	
+	.oHide{
+		width: 120px;
+		line-height: 36px;
+		text-align: center;
+		background-color: rgb(213,34,38);
+		display: none;
+	}
+	
+	#header_3 .dw{
+		background-color: rgb(213,34,38);
+	}
+	#header_3 li:hover{
+		background-color: rgb(213,34,38);
+	}
 </style>
+
+<script type="text/javascript">
+	$(function(){
+		$('#header_3>ul>li').hover(function(){
+			$(this).find('div').show();
+		},
+		function(){
+			$(this).find('div').hide();
+		})
+	})
+</script>
