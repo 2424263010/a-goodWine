@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>公司介绍</title>
+		<script src="../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/nav.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/gsjs.css"/>
+	</head>
+	<body>
+		<header></header>
+		<div id="header_1"></div>
+		<div id="header_2">
+			<div>
+				
+			</div>
+		</div>
+		<div id="header_3"></div>
+		<div id="main">
+			<div id="gsjs-main_1"></div>
+			<div id="gsjs-innovations"></div>
+			<div id="main_3"></div>
+			<div id="main_4"></div>
+			<div id="main_5"></div>
+			<div id="main_6"></div>
+		</div>
+		<div id="footer_1"></div>
+		<footer></footer>
+		<div id="fix-div"></div>
+		
+		
+		<script type="text/javascript">
+			$(function(){
+				$('header').load('../module_html/header-qian.html');
+				$('#header_1').load('../module_html/header_1.html');
+				$('#header_2>div').load('../module_html/header_2.html');
+				$('#header_3').load('../module_html/header_3.html');
+				$('#gsjs-main_1').load('../module_html/gsjs-main_1.html');
+				$('#gsjs-innovations').load('../module_html/gsjs-innovations.html');
+				$('#main_3').load('../module_html/main_3.html');
+				$('#main_4').load('../module_html/main_4.html');
+				$('#main_5').load('../module_html/main_5.html');
+				$('#main_6').load('../module_html/main_6.html');
+				$('#footer_1').load('../module_html/footer_1.html');
+				$('footer').load('../module_html/footer-qian.html');
+				$('#fix-div').load('../module_html/fix-div.html');
+			})
+		</script>
+	</body>
+</html>

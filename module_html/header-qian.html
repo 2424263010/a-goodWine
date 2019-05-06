@@ -1,0 +1,85 @@
+<!--
+	页面最顶部，
+	包含登录注册信息，及返回招商网首页和其他信息
+-->
+
+<div class="header2-nav">
+	<div class="navLeft">
+		<ul class="navLeftUl">
+			<li>欢迎来到美酒招商网，</li>
+			<li>登录</li>
+			<li>注册</li>
+		</ul>
+	</div>
+	<div class="navRight">
+		<ul class="navRightUl">
+			<li>美酒招商网首页</li>
+			<li>访问手机版</li>
+			<li>官方微信</li>
+			<li>官方微博</li>
+			<li>网站导航</li>
+		</ul>
+	</div>
+</div>
+
+
+<style type="text/css">
+	.header2-nav {
+		width: 1200px;
+		height: 30px;
+		margin: 0 auto;
+	}
+				
+	.navLeft {
+		width: 600px;
+		height: 30px;
+		float: left;
+	}
+				
+	.navLeftUl {
+		display: flex;
+		justify-content: flex-start;
+		align-content: center;
+	}
+				
+	.navLeftUl li {
+		line-height: 30px;
+		padding-right: 5px;
+		font-size: 12px;
+	}
+				
+	.navLeftUl li:nth-child(2) {
+		color: blue;
+	}
+				
+	.navRight {
+		width: 600px;
+		height: 30px;
+		float: left;
+	}
+				
+	.navRightUl {
+		display: flex;
+		justify-content: flex-end;
+		align-content: center;
+	}
+				
+	.navRightUl li {
+		line-height: 30px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+				
+	.navRightUl li:last-child {
+		background: none;
+		color: blue;
+	}
+				
+	.header2-nav li:hover {
+		color: blue;
+	}
+				
+	.navLeftUl li:first-child {
+		color: #000000;
+	}
+</style>

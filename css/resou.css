@@ -1,0 +1,145 @@
+body,
+img,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+a,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.top{
+	width: 1200px;
+	height: 40px;
+	background: #c40202;
+	margin: 0 auto;
+	margin-bottom: 15px;
+}
+.top h3{
+	height: 40px;
+	margin-left: 20px;
+	line-height: 40px;
+	color: #fff;
+}
+.all{
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.topchan{
+	width: 1300px;
+	margin: 0 auto;
+}
+
+
+
+
+
+.toppin{
+	width: 590px;
+	height: 200px;
+	box-sizing: border-box;
+	border: 1px solid #cecece;
+	float: left;
+	margin: 0 20px 15px 0 ;
+}
+.toppin h4{
+	width: 590px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	
+}
+.toppin h4 a{
+	color: #c40202;
+}
+
+.toppin h4:hover a{
+	text-decoration: underline;
+}
+.toppin dd a{
+	display: block;
+	width: 70px;
+	height: 30px;
+	overflow: hidden;
+	line-height: 30px;
+	float: left;
+	margin-left: 10px;
+}
+.toppin dd a:hover{
+	color: #C40202;
+	text-decoration: underline;
+}
+.toppin dl dd:last-child a{
+	color: #C40202;
+}
+
+.qiye{
+	width: 1200px;
+	height: 60px;
+	float: left;
+	font-size: 14px;
+}
+.qiye p{
+	height: 30px;
+	line-height: 30px;
+	margin-left: 20px;
+}
+.qiye p span{
+	color: #C40202;
+	margin-right: 10px;
+}
+.qiye ul li{
+	height: 30px;
+	line-break: 30px;
+	float: left;
+	margin-left: 20px;
+}
+.qiye ul li a:hover{
+	text-decoration: underline;
+}
+
+

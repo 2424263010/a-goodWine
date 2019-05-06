@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>新酒业动态</title>
+		<link rel="stylesheet" type="text/css" href="css/chongzhi.css" />
+		<link rel="stylesheet" type="text/css" href="css/xinjiuyedongtai.css" />
+		<script src="../jQuery/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/fenye.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="box-nav">
+			<script type="text/javascript">
+				$(".box-nav").load("header_d.html");
+			</script>
+		</div>
+		
+		<div class="box-fenye">
+			<div class="fenye">
+				<div class="fenye-nav">
+	            	<a href="index.html" target="_blank">首页</a>
+	            	>
+	            	<a>新加入公司</a>
+				</div>
+				<ul id="news" class="news">
+					<li>·<a href="#">哈哈哈哈哈哈哈哈</a><span>2019-05-01</span></li>
+					<li>·<a href="#">哈哈哈哈哈哈哈哈</a><span>2019-05-01</span></li>
+					<li>·<a href="#">哈哈哈哈哈哈哈哈</a><span>2019-05-01</span></li>
+					<li>·<a href="#">哈哈哈哈哈哈哈哈</a><span>2019-05-01</span></li>
+					<li>·<a href="#">哈哈哈哈哈哈哈哈</a><span>2019-05-01</span></li>
+					<li>·<a href="#">哈哈哈哈哈哈哈哈</a><span>2019-05-01</span></li>
+					<li>·<a href="#">哈哈哈哈哈哈哈哈</a><span>2019-05-01</span></li>
+					<li>·<a href="#">哈哈哈哈哈哈哈哈</a><span>2019-05-01</span></li>
+					<li>·<a href="#">哈哈哈哈哈哈哈哈</a><span>2019-05-01</span></li>
+					<li>·<a href="#">哈哈哈哈哈哈哈哈</a><span>2019-05-01</span></li>
+					<li>·<a href="#">哈哈哈哈哈哈哈哈</a><span>2019-05-01</span></li>
+					<li>·<a href="#">哈哈哈哈哈哈哈哈</a><span>2019-05-01</span></li>
+					<li>·<a href="#">哈哈哈哈哈哈哈哈</a><span>2019-05-01</span></li>
+					<li>·<a href="#">哈哈哈哈哈哈哈哈</a><span>2019-05-01</span></li>
+					<li>·<a href="#">哈哈哈哈哈哈哈哈</a><span>2019-05-01</span></li>
+					<li>·<a href="#">哈哈哈哈哈哈哈哈</a><span>2019-05-01</span></li>
+					<li>·<a href="#">哈哈哈哈哈哈哈哈</a><span>2019-05-01</span></li>
+					<li>·<a href="#">哈哈哈哈哈哈哈哈</a><span>2019-05-01</span></li>
+					<li>·<a href="#">哈哈哈哈哈哈哈哈</a><span>2019-05-01</span></li>
+					<li>·<a href="#">哈哈哈哈哈哈哈哈</a><span>2019-05-01</span></li>
+					<li>·<a href="#">哈哈哈哈哈哈哈哈</a><span>2019-05-01</span></li>
+					<li>·<a href="#">哈哈哈哈哈哈哈哈</a><span>2019-05-01</span></li>
+					<li>·<a href="#">哈哈哈哈哈哈哈哈</a><span>2019-05-01</span></li>
+					<li>·<a href="#">哈哈哈哈哈哈哈哈</a><span>2019-05-01</span></li>
+				</ul>
+			</div>
+			<div class="news-nav" id="news-nav">
+				
+			</div>
+		</div>
+		<script type="text/javascript">
+			//翻页
+			$(".news-nav").createPage({
+				pageNum: 15,
+				current: 6,
+				backfun: function(e) {
+					//console.log(e);//回调
+				}
+			});
+		</script>
+		<div class="box-footer">
+			<script type="text/javascript">
+				$(".box-footer").load("footer_d.html");
+			</script>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,138 @@
+section{
+	width: 1200px;
+	margin: 0 auto;
+	font-size: 14px;
+}
+.tab_shaixuan{
+	background: #f9f9f9;
+	border: 1px solid #ccc;
+}
+.tab_shaixuan ul{
+	padding: 4px 0;
+	padding-left: 10px;
+	border-left: 1px solid #ccc;
+	color: #666666;	
+}
+.tab_shaixuan li a{
+	color: #666666;	
+}
+.tab_shaixuan li a:hover{
+	color: red;
+}
+.tab_shaixuan li{
+	float: left;
+	margin: 6px 10px;
+}
+.tab_shaixuan .row{
+	border-bottom: 1px solid #ccc;
+}
+.tab_shaixuan .row:last-child{
+	border-bottom: 0;
+}
+.tab_shaixuan div:first-child li{
+	border: 1px solid #ccc;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	margin: 0;
+	margin-top: 5px;
+}
+.tab_shaixuan div:first-child li:hover{
+	border-color: red;
+}
+.tab_shaixuan .row>div:first-child{
+	line-height: 40px;
+	text-align: center;
+	vertical-align: middle;
+}
+.allWine{
+	padding: 20px 10px 0;
+}
+.allWine figure{
+	width: 225px;
+	height: 312px;
+	float: left;
+	margin: 5px ;
+	margin-top: 15px;
+}
+.allWine figure:nth-of-type(5n){
+	margin-right: 0;
+}
+.allWine figure>img{
+	width: 225px;
+	height: 257px;
+}
+.allWine figure figcaption{
+	width: 225px;
+	height: 55px;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+.allWine figure figcaption h3{
+	width: 225px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.allWine figure figcaption span a{
+	color: #999999;
+	font-size: 12px;
+}
+.allwin_fenye{
+	text-align: center;
+	height: 35px;
+	line-height: 35px;
+	background: #fgfgfg;
+	border: 1px solid #ccc;
+	margin: 10px 0;
+}
+footer aside{
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	background:#154456
+}
+footer aside ul{
+	width: 500px;
+	margin: 0 auto;
+}
+footer aside ul li{
+	float: left;
+	margin: 0 10px;
+}
+footer aside ul li a{
+	color: #fff;
+	
+}
+footer aside ul li a:hover{
+	color: red;
+}
+footer span{
+	display: block;
+	width: 600px;
+	margin: 0 auto;
+	height: 20px;
+	line-height: 20px;
+	font-size: 12px;
+	color: #666666;
+	text-align: center;
+}
+footer>ul{
+	padding: 10px;
+	width: 800px;
+	margin: 0 auto;
+}
+footer>ul li img{
+	width: 118;
+	height: 42px;
+}
+footer>ul li{
+	float: left;
+	margin: 0 10px;
+	width: 120px;
+	height: 45px;
+	border: 1px solid #ccc;
+}

@@ -1,0 +1,417 @@
+
+			header{
+				width: 100%;
+				height: 390px;
+				flex-shrink: 0;
+			}
+			.hImg{
+				width: 100%;
+				background: #200700;
+			}
+			.headerTopImg {
+				width: 1200px;
+				margin:0 auto ;
+			}
+			.headerTopImg img{
+				width: 1200px;	
+			}
+			.navbg{
+				width: 100%;
+				height: 30px;
+				border-bottom:1px solid #cecece;
+				background: #f9f9f9;
+			}
+			.nav{
+				width: 1200px;
+				height: 30px;
+				margin: 0 auto;
+			
+			}
+			.navLeft{
+				width: 600px;
+				height: 30px;
+				
+				float: left;
+			}
+			.navLeftUl{
+				display: flex;
+				justify-content: flex-start;
+				align-content: center;
+			}
+			.navLeftUl li{
+				line-height: 30px;
+				padding-right: 5px;
+				font-size: 12px;
+			}
+			.navLeftUl li:nth-child(2){
+				
+				color: blue;
+			}
+			.navLeftUl li:nth-child(3){
+				padding-left: 5px;
+				background: url(../img/line.jpg)no-repeat left center;
+			}
+			.navRight{
+				width: 600px;
+				height: 30px;
+				position: relative;
+				float: left;
+			}
+			.navRightUl{
+			 display: flex;
+			 justify-content: flex-end;
+			 align-content: center;
+			}
+			.navRightUl li{
+				line-height: 30px;
+				
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+			.navRightUl li:last-child{
+				background: none;
+				color: blue;
+			}
+			.nav li:hover{
+				color: blue;
+			}
+			.navLeftUl li:first-child{
+				color: #000000;
+			}
+					
+			/*以上为顶部图片和导航栏CSS样式*/
+			.huadongbg{
+				width: 100%;
+				height: 31px;
+				margin-top: 10px;
+			}
+			.huadong{
+				width: 1200px;
+				margin: 0 auto;
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+			}
+			.huadong font{
+				background: #f1f1f1;
+				line-height: 31px;
+				width: 66px;
+				text-align: center;
+				color: #333;
+				font-size: 12px;
+				padding-right: 5px;
+			}
+			.huadong01{
+				width: 560px;
+				height: 30px;
+				border: 1px solid #CECECE;
+				overflow:hidden;
+				position:relative;
+				/*background:pink;*/
+				margin:0 10px;
+				box-sizing: border-box;
+				
+			}
+			.huadong02{
+				width: 560px;
+				height: 30px;
+				border: 1px solid #CECECE;
+				overflow:hidden;
+				position:relative;
+				/*background:pink;*/
+				margin: 0 0 0 10px;
+				box-sizing: border-box;
+				
+			}
+			
+			.scroll {
+				/*width的大小是根据下面li的长度和多少个li而定的，需注意！*/
+				width:1000px;
+				position:absolute;
+				left:0px;
+				top:0px;
+				margin: 0 0 0 10px;
+				}
+			.scroll li {
+				width:100px;
+				float:left;
+				line-height:30px;
+				text-align:center;
+			}
+			.sousuobg{
+				width: 100%;
+				/*background: #0000FF;*/
+				margin-top: 10px;
+			}
+			.sousuo{
+				width: 1200px;
+				margin: 0 auto;
+			/*	background: bisque;*/
+				display: flex;
+			   justify-content: space-between;
+			}
+			
+		/*   888888888888888888888888888888888888888888888888*/
+			.sousuo02 {
+			  position: relative;
+			  z-index: 1;
+			  clear: both;
+			  width: 300px;
+			  height: 40px;
+			  float: left;
+			  border: 2px solid #444786;
+			}
+			.mod_select {
+			  position: absolute;
+			  left: 0;
+			  top: 0;
+			  width: 98px;
+			}
+			.mod_select .select_box {
+			  position: relative;
+			  width: 50px;
+			  height: 36px;
+			}
+			.mod_select .select_box .select_txt {
+			  display: inline-block;
+			  width: 68px;
+			  height: 40px;
+			  overflow: hidden;
+			  line-height: 36px;
+			  text-align: center;
+			  font-size: 12px;
+			  background: aliceblue;
+			  cursor: pointer;
+			}
+			.mod_select .select_box .select-icon {
+			  position: absolute;
+			  top: 50%;
+			  right: -17px;
+			  transform: translate(0,-50%);
+			  width: 10px;
+			  height: 10px;
+			  background: url(../img/search_ico.png) center no-repeat;
+			}
+			.mod_select .select_box .option {
+			  display: none;
+			  position: absolute;
+			  top: 40px;
+			  left: -2px;
+			  width: 70px;
+			  background-color: #fff;
+			  border: 2px solid #444786;
+			  border-top: 0;
+			}
+			.mod_select .select_box .option li {
+			 text-align: center;
+			  font-size: 12px;
+			  line-height: 2;
+			  cursor: pointer;
+			}
+			.searchbox .import {
+			  width: 150px;
+			  height: 40px;
+			  margin-left: 80px;
+			  border: none;
+			  outline: none;
+			}
+			.searchbox .btn-search {
+			  position: absolute;
+			  right: 0;
+			  width: 80px;
+			  height: 40px;
+			  color: #fff;
+			  background-color: #444786;
+			  border: 0;
+			}
+			.sousuo03{
+				width: 500px;
+				background: red;
+				float: right;
+			}
+			.sousuo01{
+				width: 205px;
+				height: 74px;
+				
+			}
+			.searchWine{
+				display: flex;
+				justify-content: space-between;
+				align-content: center;
+				margin-top: 5px;
+			}
+			.searchWine label{
+				margin-right: 15px;
+				margin-top: 5px;
+			}
+			.h_menu{
+				width: 100%;
+				/*background: #CECECE;*/
+			}
+			.h_menu01{
+				width: 1200px;
+				margin: 0 auto;
+				background: url(../img/mnbg.jpg) no-repeat ;
+				background-size:1200px 40px;
+			}
+			.h_menu01 ul{
+				height: 40px;
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				font-size: 16px;
+			}
+			.h_menu01Ul  li a{
+				color: white;
+				
+			}
+			.h_menu01Ul  li a:hover{
+				color: yellow;
+				text-decoration: none;
+			}
+			.h_menu01Ul  li:nth-child(1){
+				margin-left: 30px;
+			}
+			.h_menu01Ul li:nth-child(2){
+				margin-left: 25px;
+			}
+			.h_menu02{
+				width: 1200px;
+				margin: 0 auto;
+				height: 30px;
+				border: 1px solid #CECECE;
+				box-sizing: border-box;
+				margin-top: 5px;
+				background: #CECECE;
+			}
+			.h_menu02 ul{
+				line-height: 30px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			.h_menu02 ul li{
+				margin-left: 15px;
+				
+			}
+			.h_menu02 ul li a{
+				margin-left: 12px;
+			}
+			.h_menu02 ul li:last-child{
+				margin-right: 15px;
+			}
+			
+			.h_menu03{
+				width: 1200px;
+				margin: 0 auto;
+				height: 32px;
+				border: 1px solid #CECECE;
+				box-sizing: border-box;
+				
+			}
+			.h_menu03 ul{
+				line-height: 30px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			
+			.h_menu03 ul li a{
+				font-size: 12px;
+				padding: 5px 10px;
+				background: #CECECE;
+			}
+			.h_menu03 ul span a{
+				padding: 5px 10px;
+				background: #CD0200;
+				margin-right: 5px;
+			}
+			.h_menu03 ul li:nth-child(1){
+				margin-left: 5px;
+				padding-left: 15px;
+				width: 62px;
+				background: url(../img/dqbg.png)no-repeat center;
+				
+			}
+			.h_menu04{
+				width: 1200px;
+				margin: 0 auto;
+				height: 32px;
+				
+				box-sizing: border-box;
+				margin-top: 5px;
+				display: flex;
+				justify-content: space-between;
+			}
+			.h_zttj{
+				width: 104px;
+				line-height: 30px;
+				text-align: center;
+				background: #333333;
+				color: white;
+			}
+			.h_zt{
+				width: 560px;
+				border: 1px solid #CECECE;
+				box-sizing: border-box;
+				line-height: 30px;
+				border-left: none;
+				
+			}
+			.h_zt a{
+				margin-right: 25px;
+				margin-left: 10px;
+			}
+			.h_dl input{
+				box-sizing: border-box;
+				font-size: 16px;
+				width: 160px;
+				height: 30px;
+			}
+			.h_dl input:nth-child(3){
+				width: 60px;
+				height: 30px;
+				border:none
+			}
+			.h_dl input:nth-child(4){
+				width: 60px;
+				height: 30px;
+				border:none
+			}
+
+
+.xialanav{
+	width: 400px;
+	height: 485px;
+	position:absolute ;
+	background: #fff;
+	right: 0;
+	z-index: 10;
+	border: 1px solid #F1F1F1;
+	display: none;
+}
+.xialanav dl{
+	margin: 10px 0 0 10px;
+}
+.xialanav dt{
+	float: left;
+	margin: 0 15px 0 10px ;
+	color: #000000;
+	font-size: 15px;
+}
+.xialanav dd{
+	
+	overflow: hidden;
+	line-height: 23px;
+}
+.navxiala .xialanav  dd a{
+	color: #007AFF;
+	height: 30px;
+	line-height: 30px;
+	text-decoration: none;
+}
+.xialanav dd a:hover{
+	color: #007AFF;
+	text-decoration: underline;
+}
+

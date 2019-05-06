@@ -1,0 +1,99 @@
+header{
+	font-size: 12px;
+}
+header .h_menu04{
+	margin-bottom: 10px;
+}
+header .h_menu04 input{
+	height: 30px;
+}
+.chanpinzhanshi{
+padding-left: 60px;
+background: #eee;
+}
+.chanpinzhanshi figure>img{
+	border: 8px solid #ccc;
+	margin: 0;
+	padding: 0;
+}
+.chanpinzhanshi figure{
+	width: 180px;
+	height: 215px;
+	padding: 3px;
+	background: #ccc;
+	text-align: center;
+}
+.chanpinzhanshi div{
+	height: 30px;
+}
+.chanpinzhanshi a{
+	margin-left: 15px;
+}
+.chanpinzhanshi h3{
+	height: 25px;
+	line-height: 25px;
+	width:160px;
+	background: #990000;
+	margin-top: 20px;
+	color: #000;
+	font-size:12px ;
+	text-align: center;
+}
+.chanpinzhanshi div{
+	position: relative;
+	transform: preserve-3d;
+	animation: turns 3s 0.1s linear infinite;
+}
+@keyframes turns{
+	0% {transform: rotateX(90deg);}
+	100%{transform: rotateX(-90deg);}
+}
+.chanpinzhanshi figcaption{
+	margin-left: 5px;
+	text-align: center;
+	background: #0000FF;
+	padding-top: 8px;
+}
+.chanpinzhanshi figcaption{
+background: url(../img/vedio.jpg)no-repeat;
+background-position: top center;
+}
+.qiyedongtai li{
+	border-bottom: 1px dashed #ccc;
+	height: 25px;
+	line-height: 25px;
+	color: #000000;
+}
+.qiyedongtai{
+	font-size: 12px;
+	padding: 10px 20px;
+	color: #000000;
+	background: #eee;
+}
+.qiyedongtai .qiyedongtai_c{
+	float: left;
+	width: 355px;
+	background: #fff;
+	margin: 0 14px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.qiyedongtai .qiyedongtai_c>h3{
+	background:linear-gradient(#fff,#ccc);
+	font-size: 14px;
+	font-weight: 700;
+	height: 30px;
+	line-height: 30px;
+}
+.youqinglianjie{
+	position: relative;
+	top: 250px;
+}
+footer{
+	min-height:580px;
+	width: 100%;
+	background: #eee;
+	position: relative;
+	top: 250px;
+}

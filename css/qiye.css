@@ -1,0 +1,229 @@
+body,
+img,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+a,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+	cursor:pointer;
+}
+body li:hover a,body span:hover a{
+	color: red;
+	text-decoration: underline;
+}
+.logo{
+	width: 1200px;
+	height: 432px;
+	margin: 10px auto;
+	margin-bottom: 20px;
+}
+.logo img{
+	width: 1200px;
+	
+}
+
+.qiye{
+	width: 1200px;
+	height: 35px;
+	margin: 0 auto;
+	border-bottom: 2px solid red;
+}
+.qiye h2{
+	width: 110px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	background: red;
+	color: #fff;
+}
+
+.qiyelei{
+	width: 1200px;
+	margin: 0 auto;
+}
+.qiyelei ul{
+	float: left;
+}
+.qiyelei ul:nth-of-type(2){
+	margin: 0 15px;
+}
+.qiyelei ul li{
+	width: 390px;
+	height: 120px;
+	background: #F1F1F1;
+	margin-top:10px ;
+}
+.qiyelei ul li img{
+	display: block;
+	width: 110px;
+	float: left;
+	margin: 15px 20px 0 15px;
+}
+.qiyelei ul li span{
+	display: block;
+	width: 170px;
+	height: 20px;
+	line-height: 20px;
+	overflow: hidden;
+	float: left;
+	margin-top: 20px;
+	font-weight: bold;
+	font-size: 16px;
+}
+.qiyelei ul li p{
+	width: 170px;
+	height: 40px;
+	line-height: 20px;
+	float: left;
+	overflow: hidden;
+	text-indent: 2em;
+	font-size: 13px;
+	margin-top: 10px;
+}
+
+
+.fenye{
+	width: 1200px;
+	height: 50px;
+	background: #fffee6;
+	margin: 30px auto;
+}
+
+.tuijian{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.tuijian h2{
+	height: 40px;
+	line-height: 40px;
+	float: left;
+}
+.tuijian span{
+	float: right;
+	margin-right: 20px;
+	height: 40px;
+	line-height: 40px;
+}
+.tuijian div{
+	width: 1200px;
+	height: 300px;
+	border: 1px solid #e5e5e5;
+	border-top:2px solid red ;
+	float: left;
+	margin-bottom: 10px;
+}
+.tuijian div ul{
+	margin-left: 10px;
+	font-size: 16px;
+	float: left;
+}
+.tuijian div ul li{
+	height: 30px;
+	line-height: 30px;
+	width: 390px;
+	overflow: hidden;
+}
+.tuijian div ul li:first-child{
+	margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.wei{
+	width: 1200px;
+	height: 30px;
+	margin: 0 auto;
+	background: #000000;
+	text-align: center;
+}
+.wei ul{
+	overflow: auto;
+	display: inline-block;
+}
+
+.wei li{
+	float: left;
+	padding: 0 10px;
+	font-size: 12px;
+	height: 20px;
+	line-height: 20px;
+	margin-top: 5px;
+	border-left:1px dashed #cecece ;
+}
+.wei li a{
+	color: #cecece;
+}
+.wei li:hover a{
+	color: #fff;
+	text-decoration: underline;
+	
+}
+.wei li:first-child{
+	border: 0;
+}
+
+.footer{
+	width: 1200px;
+	margin: 0 auto;
+	height: 160px;
+	background: #f1f0f0;
+	text-align: center;
+}
+.footer img{
+	width: 600px;
+	height: 160px;
+}
