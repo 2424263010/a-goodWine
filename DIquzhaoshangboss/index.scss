@@ -1,0 +1,299 @@
+$allwidth:1200px;
+$fontsize:13px;
+@mixin a_hover{
+	&:hover{
+		color: red;
+		text-decoration: underline;
+	}
+}
+body,
+img,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+a,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+span{
+	margin: 0;
+	padding: 0;
+}
+.center_heater,.center_center,.center_footer{
+	font-size: $fontsize;
+	width: $allwidth;
+	margin: 10px auto;
+	border: 1px solid #cecece;
+	li{
+		list-style: none;
+	}
+	a{
+		text-decoration: none;
+		color: #000000;
+		cursor:pointer;
+	}
+	
+	
+}
+
+.center_heater{
+	height: 560px;
+	h3{
+		$height:40px;
+		height: $height;
+		background: #f1f1f1;
+		span{
+			display: block;
+			width: 205px;
+			height: $height;
+			background: rgb(201,0,0);
+			line-height: $height;
+			text-align: center;
+			float: left;
+			color: #fff;
+		}
+		p{
+			width: 980px;
+			height: $height;
+			float: right;
+			margin-right:10px;
+			line-height: $height;
+			font-weight: normal;
+			text-align: right;
+			font-size: $fontsize;
+		}
+	}
+	ul{
+		height: 520px;
+		li{
+			width: 222px;
+			height: 155px;
+			margin: 15px  0 0 15px;
+			 background: #cecece;
+			 float: left;
+			img{
+				width: 220px;
+				height: 125px;
+				border: 1px solid #cecece;
+			}
+		
+			a{
+				span{
+					display: block;
+					height: 30px;
+					line-height: 20px;
+					text-align: center;
+					overflow: hidden;
+					@include a_hover;
+					
+				}
+			}
+		}
+	}
+}
+
+
+.center_center{
+	border: 0;
+	height: 960px;
+	
+	.center_center_left{
+		width: 825px;
+		
+		height: 960px;
+		float: left;
+		border: 1px solid #cecece;
+		h3{
+			$height:40px;
+			height: $height;
+			background: #f1f1f1;
+			p{
+				display: block;
+				width: 200px;
+				height: $height;
+				color: rgb(201,0,0);
+				line-height: $height;
+				text-align: center;
+				float: left;
+				
+			}
+			span{
+				width: 600px;
+				height: $height;
+				float: right;
+				margin-right:10px;
+				line-height: $height;
+				font-weight: normal;
+				text-align: right;
+				font-size: $fontsize;
+				a{
+					@include a_hover;
+				}
+			}
+		}
+		
+		
+		ul li{
+			width: 192px;
+			height: 170px;
+			background: #cecece;
+			float: left;
+			margin: 10px 0 0 10px;
+			border: 1px solid #cecece;
+			img{
+				width: 192px
+			}
+			
+			a{
+				
+				span{
+					display: block;
+					height: 20px;
+					line-height: 15px;
+					text-align: center;
+					overflow: hidden;
+					@include a_hover;
+				}
+			}
+		}
+	}
+	
+	.center_center_right{
+		width: 365px;
+		height: 960px;
+		
+		float: right;
+		border: 1px solid #cecece;
+		a{
+			img{
+				width: 365px;
+				height: 355px;
+			}
+		}
+		div{
+			width: 365px;
+			height: 595px;
+			
+			margin-top:7px; 
+			p{
+				height: 35px;
+				background: #f1f1f1;
+				line-height: 35px;
+				font-weight: bold;
+				margin-left:10px; 
+				span{
+					float: right;
+					margin-right:10px;
+					font-weight: normal;
+					a{
+						@include a_hover;
+					}
+				}
+			}
+			
+			ul li{
+				height: 29px;
+				line-height: 29px;
+				margin-left:10px;
+				width: 350px;
+				overflow: hidden;
+				a{
+					@include a_hover;
+				}
+				 
+			}
+		}
+		
+		
+	}
+	
+	
+	
+	
+}
+
+.center_footer{
+	height: 280px;
+	border: 0;
+	overflow: hidden;
+	.center_footer1{
+		width: 1300px;
+	div{
+		float: left;
+		width: 294px;
+		height: 280px;
+		border: 1px solid #cecece;
+		margin-right: 7px;
+		box-sizing: border-box;
+		h3{
+			height: 35px;
+			background: url(http://www.9928.tv/company/images/anniu05.jpg) no-repeat;
+			background-size: 294px 35px;
+			line-height: 35px;
+			padding-left:25px; 
+			box-sizing: border-box;
+			
+			margin-bottom: 5px;
+			span{
+				float:right;
+				margin-right:10px;
+				 font-weight: normal;
+				 font-size: $fontsize;
+				 a{
+					 @include a_hover;
+				 }
+			}
+		}
+		ul {
+			li{
+				
+				margin-left:15px;
+				height: 30px;
+				line-height: 30px;
+				width: 250px;
+				overflow: hidden;
+				span{
+					margin-left:5px;
+					 color: red;
+				}
+				a{
+					@include a_hover; 
+			}
+		}
+		}
+		
+	}
+	}
+}
+
