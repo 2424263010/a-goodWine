@@ -1,13 +1,83 @@
-body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,figure,figcaption,fieldset,table,td,dd,dt,dl,img,div{margin:0;padding:0;border:0;}
-body{ font-size:12px;font-family:"Microsoft yahei"}
-a { text-decoration:none; color:#000;}
-a:hover { color:#000!important; text-decoration:underline;cursor: pointer;}
-ul { list-style:none;}
-select,input,select{vertical-align:middle;} 
-.clearit{clear:both;}
-table {border-collapse:collapse;border-spacing:0;}
-fieldset,img {border:0;}
-em{font-style:normal}
-li{list-style:none}
-img{display: block;border: 0;}
-input{outline: none;}
+body,
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+figure,
+figcaption,
+fieldset,
+table,
+td,
+dd,
+dt,
+dl,
+img,
+div {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	font-size: 12px;
+	font-family: "Microsoft yahei"
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover {
+	color: #000 !important;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+ul {
+	list-style: none;
+}
+
+select,
+input,
+select {
+	vertical-align: middle;
+}
+
+.clearit {
+	clear: both;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+fieldset,
+img {
+	border: 0;
+}
+
+em {
+	font-style: normal
+}
+
+li {
+	list-style: none
+}
+
+img {
+	display: block;
+	border: 0;
+}
+
+input {
+	outline: none;
+}
