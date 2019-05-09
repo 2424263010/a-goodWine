@@ -1448,6 +1448,7 @@
 		right: 4px;
 	}
 	.dengluzhece{
+		display: none;
 		width: 250px;
 		height: 150px;
 		background: #B0B0B0;
@@ -1456,26 +1457,30 @@
 		right: 30px;
 	}
 	.dengluzhece p{
+		    width: 120px;
+   			 height: 70px;
 		float: right;
-		line-height: 150px;
-		text-align: center;
-		margin-right: 30px;
+	    line-height: 6;
+	    text-align: center;
+	    margin-right: 18px;
+	    font-size: 20px;
 	}
 	.dengluzhece img{
 		border-radius: 50%;
 		margin-top: 20px;
-		margin-left: 40px;
+		margin-left: 25px;
 	}
 	.ddddd a{
 		display: block;
-		width: 60px;
-		height: 60ox;
+		width: 70px;
+		height: 30px;
+		line-height: 30px;
 		background: red;
 		font-size: 18px;
 		float: left;
-		margin-top: 30px;
+		margin-top: 20px;
 		text-align: center;
-		margin-left: 10px
+		margin-left: 30px
 	}
 	.ddddd a:first-child{
 		margin-right: 20px;

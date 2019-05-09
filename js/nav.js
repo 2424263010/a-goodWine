@@ -3,8 +3,8 @@ $(function() {
 	sousuo();
 	lunbo();
     bgRed();
-    
-    
+    btnList();
+    touxiang();
 	function gundong() {
 		var num = 0;
 
@@ -111,13 +111,22 @@ $(function() {
     	})
     }
     
-    //function btnList(){
+    function btnList(){
     	$(document).ready(function(){
     		$(".lidiv").find("button").hover(function(){
     			$(this).find($(".btnxianshi")).css("display","block");
+    			
     		},function(){
     			$(this).find($(".btnxianshi")).css("display","none");
+    			
     		})
     	})
-   // }
+  }
+    function touxiang(){
+    	$(".touxiang").hover(function(){
+    		$(".dengluzhece").css("display","block");
+    	},function(){
+    		$(".dengluzhece").css("display","none");
+    	})
+    }
 })
