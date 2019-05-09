@@ -1,10 +1,5 @@
 	/*以上为头*************************************************部CSS样式*/
 	
-	section {
-		flex: 1;
-		overflow: auto;
-		background: #f6f6f6;
-	}
 	
 	.m_Center {
 		width: 100%;
@@ -67,16 +62,98 @@
 	}
 	
 	.m_tCenter02Ul li {
-		width: 158px;
+		width: 165px;
+		height: 88px;
+		margin-bottom: 6px;
+		
+	}
+	.m_tCenter02Ul li a{
+		width: 165px;
 		height: 88px;
 	}
-	
+	.m_tCenter02Ul li a img{
+		width: 100%;
+	}
 	.m_tCenter02Center {
 		width: 38%;
 		height: 280px;
 		background: #444786;
 	}
-	
+	#banner {
+			position: relative;
+			width: 455px;
+    		height: 278px;
+			border: 1px solid #666;
+			overflow: hidden;
+		}
+		#banner_list a{
+			width: 455px;
+    		height: 278px;
+		}
+		#banner_list a img {
+			border: 0px;
+			/*width: 100%;*/
+		}
+		
+		#banner_bg {
+			position: absolute;
+			bottom: 0;
+			height: 30px;
+			filter: Alpha(Opacity=30);
+			opacity: 0.3;
+			z-index: 1000;
+			cursor: pointer;
+			width: 455px;
+		}
+		
+		#banner_info {
+			position: absolute;
+			bottom: 0;
+			left: 5px;
+			height: 22px;
+			color: #fff;
+			z-index: 1001;
+			cursor: pointer
+		}
+		
+		#banner_text {
+			position: absolute;
+			width: 120px;
+			z-index: 1002;
+			right: 3px;
+			bottom: 3px;
+		}
+		
+		#banner ul {
+			position: absolute;
+			list-style-type: none;
+			filter: Alpha(Opacity=80);
+			opacity: 0.8;
+			z-index: 1002;
+			margin: 0;
+			padding: 0;
+			bottom: 12px;
+			right: 23px;
+		}
+		
+		#banner ul li {
+			padding: 0px 8px;
+			float: left;
+			display: block;
+			color: #FFF;
+			background: #6f4f67;
+			cursor: pointer;
+			border: 1px solid #333;
+		}
+		
+		#banner ul li.on {
+			background-color: #000;
+		}
+		
+		#banner_list a {
+			position: absolute;
+		}
+		
 	.m_tCenter02Right {
 		width: 30%;
 		height: 280px;
@@ -674,7 +751,7 @@
 	
 	.f2-sousuo .right img {
 		position: absolute;
-		top: -5px;
+		top: 5px;
 		right: 20px;
 		width: 30px;
 		height: 30px;
@@ -1135,6 +1212,18 @@
 		position: relative;
 		overflow: hidden;
 	}
+    .btnxianshi{
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: -104px;
+    background: #fff;
+    text-align: center;
+    color: #333;
+    z-index: 999;
+    padding: 8px;
+    border: #ebebeb 1px solid;
+	}
 	
 	.a_area04btm1rightss {
 		padding: 8px 10px;
@@ -1192,7 +1281,7 @@
 	
 	.a_area122 {
 		float: left;
-		width: 237px;
+		width: 287px;
 		margin-left: 10px;
 		display: inline;
 	}
@@ -1216,7 +1305,9 @@
 		border-top: #e8e8e8 1px dashed;
 		position: relative;
 	}
-	
+	.a_area122 ul li.on{
+		background: red;
+	}
 	.a_area122 ul li font {
 		color: #ec0000;
 		width: 20px;
@@ -1249,6 +1340,7 @@
 	}
 	
 	.lidiv {
+		line-height: 60px;
 		width: 180px;
 		height: 180px;
 		border-radius: 50%;
@@ -1297,5 +1389,246 @@
 		cursor: pointer;
 		outline: none;
 		position: relative;
+	}
+	.fudong{
+		height: 100%;
+	    right: 0;
+	    position: fixed;
+	    right: 0;
+	    bottom: 0;
+	    z-index: 100;
+	    height: 100%;
+	}
+	.quickLink{
+		    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    height: 100%;
+	}
+	.quickPanle{
+		    width: 30px;
+    height: 100%;
+    position: absolute;
+    background: #161616;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    font-family: 'microsoft yahei',arial;
+	}
+	.quickPanle01{
+		position: absolute;
+    top: 40%;
+    left: 0;
+    margin-top: -190px;
+    z-index: 2;
+    width: 30px;
+     color: white;
+	}
+	
+	.quickPanle01 li a{
+		position: relative;
+    display: block;
+    left: 0;
+    top: 0px;
+     color: white;
+     text-align: center;
+	}
+	.quickPanle01 li:first-child img{
+		width: 24px;
+		height: 24px;
+		border-radius: 50%;
+		background-image:#000 ;
+		
+	}	
+	.quickPanle01 li:nth-child(1){
+		/*display: none;*/
+		position: absolute;
+		color: #000000;
+		right: 4px;
+	}
+	.dengluzhece{
+		width: 250px;
+		height: 150px;
+		background: #B0B0B0;
+		position: absolute;
+		top: 30px;
+		right: 30px;
+	}
+	.dengluzhece p{
+		float: right;
+		line-height: 150px;
+		text-align: center;
+		margin-right: 30px;
+	}
+	.dengluzhece img{
+		border-radius: 50%;
+		margin-top: 20px;
+		margin-left: 40px;
+	}
+	.ddddd a{
+		display: block;
+		width: 60px;
+		height: 60ox;
+		background: red;
+		font-size: 18px;
+		float: left;
+		margin-top: 30px;
+		text-align: center;
+		margin-left: 10px
+	}
+	.ddddd a:first-child{
+		margin-right: 20px;
+	}
+	.quickPanle01 li:nth-child(2){
+		margin-top: 80px;
+		position: relative;
+    display: block;
+    left: 0;
+    top: 0px;
+	}
+	.quickPanle02{
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+    background: #444851;
+    z-index: 1;
+	}
+
+	.quickPanle02 li{
+		    position: relative;
+    display: block;
+    left: 0;
+    top: 0px;
+    color: white;
+	}
+	.quickPanle02 li a{
+		    display: block;
+    line-height: 38px;
+    text-align: center;
+    width: 30px;
+    margin: 0 auto;
+    height: 38px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    overflow: hidden;
+    background-color: #161616;
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: 0px;
+    z-index: 1;
+    padding: 0;
+	}
+	.quickPanle02 li a i{
+		width: 18px;
+    height: 18px;
+    top: 11px;
+    left: 6px;
+    background-position: 0 -302px;
+	}
+	.mapcode{
+    padding: 10px;
+    width: 148px;
+    height: 175px;
+    top: -157px;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,.4);
+    border-radius: 5px 0 0 5px;
+    
+    z-index: 9999;
+    position: absolute;
+    left: -168px;
+    display: none;
+	}
+	.mapcode img{
+		vertical-align: middle;
+	}
+	.mapcode p{
+		    text-align: center;
+		    font-size: 14px;
+	}
+	.mapcode i{
+		position: absolute;
+    right: -5px;
+    top: 172px;
+    width: 5px;
+    height: 9px;
+    background-position: 0 -253px;
+	}
+	.top{
+    background-position: 0 -201px;
+    width: 17px;
+    height: 14px;
+    top: 12px;
+    left: 6px;
+	}
+	.quickPop{
+	position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    box-shadow: 0 0 5px #999;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #999;
+	}
+		.quickLi{
+		width: 220px;
+    overflow: hidden;
+    height: 85px;
+	}
+	.quickLi img{
+		width: 70px;
+    height: 70px;
+    vertical-align: middle;
+	}
+	.quickLi p{
+		    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+        float: left;
+    margin: 6px 10px 0 5px;
+    display: inline;
+	}
+	.quickLi ul{
+		overflow: hidden;
+    color: #333;
+    padding-top: 20px;
+    line-height: 24px;
+    width: 130px;
+    float: left;
+	}
+	.quickLi ul li{
+		    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 14px;
+    position: relative;
+    display: block;
+    left: 0;
+    top: 0px;
+    z-index: 111;
+	}
+	.quickLi02{
+	width: 220px;
+    border-top: 1px dotted #d5d5d5;
+    overflow: hidden;
+    padding-top: 10px;
+    clear: both;
+	}
+	.quickLi02 a:nth-child(1){
+	width: 60px;
+	height: 60px;
+	background: #0067A9;
+	z-index: 100;
+	}
+	.quickLi02 a:nth-child(2){
+		width: 60px;
+	height: 60px;
+	background: #0067A9;
 	}
 	/*////////////////////////////////////////////////*/
