@@ -1,7 +1,6 @@
 {
   "name": "a-goodwine",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,5 +11,14 @@
     "gulp": "^3.9.1",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2424263010/a-goodWine.git"
+  },
+  "bugs": {
+    "url": "https://github.com/2424263010/a-goodWine/issues"
+  },
+  "homepage": "https://github.com/2424263010/a-goodWine#readme",
+  "description": ""
 }
