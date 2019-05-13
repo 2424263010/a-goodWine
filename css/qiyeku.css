@@ -219,10 +219,6 @@ nav-tabs>li>a:hover{
 .city li{
 	width: 50px;
 }
-.qiyerenzheng{
-	position: relative;
-	top: 300px;
-}
 .certification{
 	
 	padding: 0;
@@ -302,6 +298,7 @@ nav-tabs>li>a:hover{
 }
 .fenlei {
 	border: 1px solid #ccc;
+	margin-bottom: 10px;
 }
 .fenlei h3{
 	float: left;
@@ -336,6 +333,5 @@ nav-tabs>li>a:hover{
 .fenlei ul{
 }
 footer{
-	position: relative;
 	top: 301px;
 }
