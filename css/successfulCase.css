@@ -1,4 +1,4 @@
-body,ul,li,figcaption,figure,h4{
+body,ul,li,figcaption,figure,h4,h5,p,dl,dt,dd{
 	margin: 0;
 	padding: 0;
 }
@@ -19,61 +19,74 @@ header div{
 	height: 80px;
 	margin: 0 auto;
 	background: url(../img/successbg1.png) no-repeat left center;
+	position: relative;
 }
-header div ul{
+header div ul:last-child{
+	width: 1200px;
+	height: 50px;
+	overflow: hidden;
+	background: red;
+	position: absolute;
+	top: 80px;
+	left: 0;
+	display: none;
+	
+}
+header div ul:first-child{
 	width: 840px;
 	height: 32px;
 	float: right;
 	margin-top: 30px;
 }
-header ul li{
+header ul:first-child li{
 	height: 32px;
 	line-height: 32px;
 	background: #f00;
 	float: left;
 	position: relative;
 }
-header ul li:nth-child(1){
+header ul:first-child li:nth-child(1){
 	margin-left: 40px;
 }
-header ul li:nth-child(2){
+header ul:first-child li:nth-child(2){
 	margin-left: 46px;
 }
-header ul li:nth-child(3){
+header ul:first-child li:nth-child(3){
 	margin-left: 62px;
 }
-header ul li:nth-child(4){
+header ul:first-child li:nth-child(4){
 	margin-left: 61px;
 }
-header ul li:nth-child(5){
+header ul:first-child li:nth-child(5){
 	margin-left: 52px;
 }
-header ul li:nth-child(6){
+header ul:first-child li:nth-child(6){
 	margin-left: 60px;
 }
-header ul li:nth-child(7){
+header ul:first-child li:nth-child(7){
 	margin-left: 40px;
 }
 
-header ul li a{
+header ul:first-child li a{
 	display: inline-block;
 	height: 32px;
 	color: #333333;
 	font-size: 16px;
 	background: white;
 }
-header ul li a:hover{
+header ul:first-child li:hover a{
 	height: 30px;
+	color: red;
 }
-header ul li span{
+
+header ul:first-child li span{
 	position: absolute;
 	top: 13px;
 	right:-10px ;
 	width: 8px;
 	height: 5px;
-	background: url(../img/successbg2.png) no-repeat center;
+	background: url(../img/successbg2.png) no-repeat left top;
 }
-
 
 
 .logo{
@@ -260,5 +273,488 @@ header ul li span{
 .kefu{
 	width: 100%;
 	height: 945px;
-	background: url(../img/successbg11.png) no-repeat center;
 }
+.kefu_top{
+	width: 100%;
+	background: #eeeeee;
+}
+.kefu_content1{
+	width: 1200px;
+	height: 300px;
+	margin: 0 auto;
+	padding-top:40px ;
+	box-sizing: border-box;
+}
+.kefu_content1 div{
+	width: 414px;
+	height: 67px;
+	margin: 0 auto;
+}
+.kefu_content1 h4{
+	width: 1200px;
+	height: 40px;
+	font-weight: normal;
+	line-height: 40px;
+	text-align: center;
+	color: #888888;
+	font-size: 18px;
+}
+.kefu_content1  h5{
+	width: 1200px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 18px;
+	color: #444444;
+	font-weight: normal;
+	margin-top: 35px;
+}
+.kefu_mid{
+	width: 100%;
+	height: 585px;
+	background: url(../img/successbg11.png) no-repeat center;
+	margin-top:-3px ;
+}
+.kefu_mid .kefu_content2{
+	width: 1200px;
+	height: 585px;
+	margin: 0 auto;
+	padding-top: 66px;
+	box-sizing: border-box;
+}
+.kefu_mid .kefu_content2 div{
+	width: 425px;
+	height: 413px;
+	margin-left: 770px;
+}
+.kefu_content2 div h4{
+	width: 425px;
+	height: 40px;
+	line-height: 40px;
+	color: white;
+	font-size: 28px;
+	font-weight: 500;
+}
+.kefu_content2 div p:nth-child(2){
+	width: 275px;
+	height: 105px;
+	line-height: 28px;
+	font-size: 16px;
+	color: white;
+	font-size: 14px;
+}
+.kefu_content2 div p:nth-child(3){
+	width: 330px;
+	height: 115px;
+	line-height: 26px;
+	color: white;
+	margin-left: 95px;
+	font-size: 14px;
+}
+.kefu_content2 div p:nth-child(4){
+	width: 330px;
+	height: 115px;
+	line-height: 26px;
+	color: white;
+	margin-left: 95px;
+	font-size: 14px;
+}
+.kefu_content2 div p:nth-child(5){
+	width: 330px;
+	height: 115px;
+	line-height: 26px;
+	color: white;
+	margin-left: 95px;
+	font-size: 14px;
+}
+.kefu_bottom{
+	width: 100%;
+	height: 70px;
+	background: #eee;
+}
+
+.yewu{
+	width: 100%;
+	height: 870px;
+}
+.yewu_top{
+	width: 100%;
+	background: white;
+}
+.yewu_content1{
+	width: 1200px;
+	height: 300px;
+	margin: 0 auto;
+	padding-top:40px ;
+	box-sizing: border-box;
+}
+.yewu_content1 div{
+	width: 414px;
+	height: 67px;
+	margin: 0 auto;
+}
+.yewu_content1 h4{
+	width: 1200px;
+	height: 40px;
+	font-weight: normal;
+	line-height: 40px;
+	text-align: center;
+	color: #888888;
+	font-size: 18px;
+}
+.yewu_content1  h5{
+	width: 1200px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 18px;
+	color: #444444;
+	font-weight: normal;
+	margin-top: 35px;
+}
+.yewu_mid{
+	width: 100%;
+	height: 585px;
+	background: url(../img/successbg12.png) no-repeat center;
+	margin-top:-3px ;
+}
+.yewu_mid .yewu_content2{
+	width: 1200px;
+	height: 585px;
+	margin: 0 auto;
+	padding-top: 66px;
+	box-sizing: border-box;
+}
+.yewu_mid .yewu_content2 div{
+	width: 425px;
+	height: 413px;
+	margin-left: 50px;
+}
+.yewu_content2 div h4{
+	width: 425px;
+	height: 40px;
+	line-height: 40px;
+	color: #444444;
+	font-size: 28px;
+	font-weight: 500;
+}
+.yewu_content2 div p:nth-child(2){
+	width: 275px;
+	height: 105px;
+	line-height: 28px;
+	font-size: 16px;
+	color: #444444;
+}
+.yewu_content2 div p:nth-child(3){
+	width: 330px;
+	height: 115px;
+	line-height: 26px;
+	color: #444444;
+	margin-left: 95px;
+}
+.yewu_content2 div p:nth-child(4){
+	width: 330px;
+	height: 100px;
+	line-height: 26px;
+	color: #444444;
+	margin-left: 95px;
+}
+.yewu_content2 div p:nth-child(5){
+	width: 330px;
+	height: 115px;
+	line-height: 26px;
+	color: #444444;
+	margin-left: 95px;
+}
+
+.youshi{
+	width: 1200px;
+	height: 1295px;
+	margin: 10px auto 0;
+}
+.youshi_top{
+	width: 1200px;
+	height: 335px;
+	padding-top: 120px;
+	box-sizing: border-box;
+}
+.youshi_top div{
+	width: 415px;
+	height: 71px;
+	margin: 0 auto ;
+}
+.youshi_top p{
+	width: 795px;
+	height: 100px;
+	line-height: 32px;
+	font-size: 18px;
+	color: #888888;
+	text-align: center;
+	margin: 10px auto 0;
+}
+.youshi_mid{
+	width: 1200px;
+	height: 300px;
+}
+.youshi_mid dl{
+	width: 400px;
+	height: 300px;
+	float: left;
+}
+.youshi_mid dt{
+	width: 147px;
+	height: 141px;
+	margin: 0 auto;
+}
+.youshi_mid dd:nth-child(2){
+	width: 400px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 24px;
+	color: #cf0407;
+	text-align: center;
+	margin-top:25px ;
+}
+.youshi_mid dd:nth-child(3){
+	width: 400px;
+	height: 34px;
+	line-height: 34px;
+	font-size: 22px;
+	color: #0e0e0e;
+	text-align: center;
+}
+.youshi_bootom{
+	width: 1200px;
+	height: 590px;
+	background: url(../img/successbg13.png) no-repeat center;
+}
+.youshi_bootom ul{
+	width: 350px;
+	float: left;
+	margin: 210px 0 0 50px;
+}
+.youshi_bootom ul li{
+	height: 34px;
+	line-height: 34px;
+	font-size: 16px;
+	color: white;
+}
+.youshi_bootom ul:nth-child(2) li{
+	color: #444444;
+}
+
+.server{
+	width: 100%;
+	height: 1090px;
+	margin: 0 auto;
+	background: #eee;
+}
+.server_top{
+	width: 1200px;
+	height: 173px;
+	padding-top: 45px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+.server_top div{
+	width: 450px;
+	height: 65px;
+	margin: 0 auto;
+	
+}
+.server_top p{
+	width: 795px;
+	height: 100px;
+	line-height: 32px;
+	font-size: 18px;
+	color: #888888;
+	text-align: center;
+	margin: 10px auto 0;
+}
+.server_bottom{
+	width: 1200px;
+	height: 960px;
+	background: url(../img/successbg14.png) no-repeat center;
+	margin: 0 auto;
+	padding-top:285px;
+	box-sizing: border-box;
+}
+.server_content{
+	width: 720px;
+	height:555px;
+	margin-left: 470px;
+}
+.server_content div{
+	width: 500px;
+}
+.server_content div h4{
+	height: 40px;
+	line-height: 40px;
+	font-size: 26px;
+	font-weight: normal;
+	color: #d50016;
+}
+.server_content div p{
+	color: #030c09;
+	font-size: 18px;
+	line-height: 24px;
+}
+.server_content div:nth-child(1){
+	height: 66px;
+}
+.server_content div:nth-child(2){
+	margin:40px 0 0 140px;
+	height: 90px;
+}
+.server_content div:nth-child(3){
+	margin: 46px 0 0 187px;
+	height: 65px;
+}
+.server_content div:nth-child(4){
+	margin: 57px 0 0 170px;
+	height: 65px;
+}
+.server_content div:nth-child(5){
+	margin: 35px 0 0 75px;
+	height: 90px;
+}
+.infor{
+	width: 100%;
+	height:720px;
+}
+.infor div:first-child{
+	width: 100%;
+	height: 113px;
+	background: url(../img/successimg4.png) no-repeat center;
+}
+.infor_content{
+	width: 1200px;
+	height: 607px;
+	margin: 0 auto;
+	position: relative;
+}
+.infor_content span{
+	display: inline-block;
+	width: 605px;
+	height: 89px;
+	margin-top:72px ;
+}
+.infor_content p{
+	width: 605px;
+	line-height: 30px;
+	font-size: 15px;
+	color: #444444;
+	text-indent: 2em;
+}
+.infor_content div{
+	position: absolute;
+	width: 476px;
+	height: 380px;
+	top:72px ;
+	right: 0;
+}
+
+.tuijian{
+	width: 100%;
+	height: 635px;
+	background: #f5f5f5;
+}
+.tuijian_top{
+	width: 1200px;
+	height: 202px;
+	margin: 0 auto;
+	padding-top:50px;
+	box-sizing: border-box;
+}
+.tuijian_top div{
+	width: 406px;
+	height: 59px;
+	margin: 0 auto ;
+}
+.tuijian_top p{
+	width: 795px;
+	height: 100px;
+	line-height: 32px;
+	font-size: 18px;
+	color: #888888;
+	text-align: center;
+	margin: 10px auto 0;
+}
+.tuijian_bottom{
+	width: 1200px;
+	height: 370px;
+	margin: 0 auto;
+}
+.tuijian_bottom ul{
+	width: 1200px;
+	height: 365px;
+	padding-left: 7px;
+	box-sizing: border-box;
+}
+.tuijian_bottom li{
+	width: 147px;
+	height: 120px;
+	float: left;
+	margin: 1px 0 0 1px;
+}
+
+/***********/
+footer{
+	width: 100%;
+	height: 250px;
+	margin: 0 auto;
+	background: #3f3e3e;
+	font-size: 12px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.f_bt03{
+    	width: 1200px;
+    	height: 200px;
+    	margin: 0 auto;
+    	background:#3f3e3e;
+    	color: white;
+    	position: relative;
+    	line-height: 18px;
+    }
+    .f_bt0301 a{
+    	color: white;
+    	font-size: 14px;
+    	line-height: 48px;
+    }
+    .f_bt0302 a{
+    	color: white;
+    	font-size: 12px;
+        text-decoration: none;
+    }
+    .f_bt0303 ul{
+    	width: 1200px;
+    	height: 47px;
+    	display: flex;
+    	justify-content: flex-start;
+    	margin-top: 10px;
+    }
+    .f_bt0303 ul li{
+    	width: 150px;
+    	height: 60px;
+    	border: #9ACD32 1px solid;
+    	margin-right: 10px;
+    }
+    .f_bt0304{
+    	position: absolute;
+    	right: 0;
+    	top: 12px;
+    }
+    .f_bt0304 li{
+    	float: left;
+		width: 150px;
+		margin-right: 10px;
+		font-size: 12px;
+		color: #cccaca;
+		text-align: center;
+		line-height: 30px;
+    }
+    .f_bt0304 li img{
+    	width: 100px;
+    	height: 100px;
+    }
