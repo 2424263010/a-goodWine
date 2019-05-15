@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.warp{
+				width: 1200px;
+				margin: 0 auto;
+			}
+			.ls_ls{
+				width: 1200px;
+				padding-top: 20px;
+				height: 120px;
+				margin: 0 auto;
+			}
+			.logo{
+				width: 230px;
+				height: 100px;
+				float: left;
+			}
+			.logo img{
+				width: 230px;
+				height: 100px;
+			}
+			.ls_sou{
+				width: 550px;
+				margin-left:30px;
+				float: left;
+			}
+			.ls_top{
+				width: 550px;
+				height: 40px;
+				line-height: 40px;
+				font-size:14px;
+			}
+			.ls_top li{
+				margin-left: 20px;
+				float: left;
+			}
+			.ls_top li a{
+				color: #0000cc;
+				
+			}
+			.ls_center{
+				height: 30px;
+				width: 550px;
+				margin: 10px auto;
+			}
+			/*.ls_center input{
+				height: 30px;
+				display: block;
+				float: left;
+				margin-left:20px ;
+			}*/
+			#txt{
+				display: block;
+				height: 30px;
+				width: 460px;
+				background: #FF0000;
+				float: left;
+			}
+			#btn{
+				width: 75px;
+				font-size:14px;
+				text-align: center;
+				
+				height: 36px;
+				display: block;
+				margin-left: 10px;
+				float: left;
+			}
+			.ls_foot{
+				width: 550px;
+				height: 30px;
+				line-height: 30px;
+				font-size: 12px;
+				
+			}
+			.ls_foot li{
+				margin:0 10px;
+				float: left;
+			}
+			.ls_foot span{
+				width: 70px;
+				height: 30px;
+				display: block;
+				float: left;
+				line-height: 30px;
+				text-align: center;
+				color: #CECECE;
+			}
+			.reust{
+				width: 1200px;
+				height: 30px;
+				font-size: 12px;
+				margin-top:30px ;
+				border-bottom:#CECECE 1px solid;
+			}
+			.reust_right{
+				float: right;
+				
+			}
+			.reust_left{
+				float: left;
+			}
+			.reust_right,.reust_left a{
+				color: red;
+			}
+			.content{
+				width: 1200px;
+				margin: 10px auto;
+				height: 1840px;
+			}
+			.list{
+				width: 850px;
+				height: 1810px;
+				float: left;
+				
+			}
+			.list li{
+				padding: 15px 0;
+				border-bottom:#ebebeb 1px solid;
+				height: 144px;
+			}
+			.list li:hover{
+				background: #CECECE;
+			}
+			
+			.pic{
+				float: left;
+				margin: 0 15px;
+				border: 1px solid #CECECE;
+				
+			}
+			.pic{
+				width: 125px;
+				height: 142px;
+				float: left;
+			}
+			.titl{
+				width: 610px;
+				float: left;
+				font-size: 16px;
+				font-weight:bold;
+				padding: 2px 0 8px 0;
+			}
+			.shux{
+				float: left;
+				width: 610px;
+				line-height: 24px;
+				font-size: 14px;
+				color: #777;
+				overflow: hidden;
+			}
+			.shux span{
+				width: 300px;
+				display: block;
+				float: left;
+				color: #777777;
+				font-size:14px ;
+			}
+			
+			.enterbt{
+				float: left;
+				width: 610px;
+				text-align: center;
+				line-height: 28px;
+				font-size: 14px;
+				margin-top:10px ;
+			}
+			.enterbt a{
+				width: 100px;
+				background: #0000CC;
+				color: white;
+				font-weight:bold ;
+				display: block;
+			}
+			.foot{
+				width:100% ;
+				height: 30px;
+				line-height: 30px;
+				background: #f4f4f4;
+				color: #666666;
+				margin-top: 20px;
+				text-align: center;
+			}
+			.foot a{
+				padding: 0 5px;
+				color: #666666;
+			}
+			.content_right{
+				float: right;
+				width: 309px;
+				padding: 20px;
+				border-left:#EBEBEB solid 1px;
+			}
+			.kuai h3,.kuai_3 h3{
+				line-height: 40px;
+				font-size: 14px;
+				color: #000000;
+			}
+			.kuai a{
+				display: block;
+				font-size: 14px;
+				float: left;
+				line-height: 28px;
+				width: 103px;
+				text-align: left;
+				color: #0000CC;
+				text-decoration:underline ;
+			}
+			.kuai_2{
+				margin-top: 10px;
+				
+			}
+			.kuai_2 img{
+				display: block;
+				width: 310px;
+				height: 320px;
+				border: 0;
+			}
+			.kuai_3 ul li{
+				float: left;
+				width: 140px;
+				margin: 6px 14px 0 0;
+				text-align: center;
+			}
+			.kuai_3 li img {
+				width: 138px;
+				height: 159px;
+				border: #e1e1e1 solid 1px;
+			}
+			.kuai_3 li span{
+				display: block;
+				line-height: 28px;
+			}
+			.kuai_3 li span a{
+				color: #0000CC;
+				text-decoration: underline;
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="../css/chongzhiguo.css"/>
+	</head>
+	<body>
+		<div class="warp">
+			<div class="ls_ls">
+				<div class="logo">
+					<img src="../img/未标题-1.png"/>
+				</div>
+				<div class="ls_sou">
+					<ul class="ls_top">
+						<li><a href="#" target="_blank">产品</a></li>
+						<li><a href="#" target="_blank">企业</a></li>
+						<li><a href="#" target="_blank">品牌</a></li>
+						<li><a href="#" target="_blank">糖酒会</a></li>
+						<li><a href="#" target="_blank">资讯</a></li>
+						<li><a href="#" target="_blank">百科</a></li>
+						<li><a href="#" target="_blank">问答</a></li>
+					</ul>
+					<div class="ls_center">
+						<input type="text" name="" id="txt" value="" />
+						<input type="button" name="" id="btn" value="搜索" />
+					</div>
+					<div class="ls_foot">
+						<span>热搜：</span>
+						<ul class="resou">
+							<li><a href="#" target="_blank">老白干</a></li>
+							<li><a href="#" target="_blank">实诚人家</a></li>
+							<li><a href="#" target="_blank">百年二锅头</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="reust">
+				<div class="reust_left">
+					美团招商网为您找到相关结果
+					<a>1445</a>个
+				</div>
+				<div class="reust_right">
+					如果没有找到您需要的信息，
+					<a>可以到这里找找！</a>
+				</div>
+			</div>
+			<!--中间内容页-->
+			<div class="content">
+				<div class="list">
+					<ul>
+						<li>
+							<div class="pic">
+								<a href="#" target="_blank"><img src="../img/maotai.jpg"/></a>
+							</div>
+							<div class="titl">
+								<a href="#" target="_blank">贵州茅台酒</a>
+							</div>
+							<div class="shux">
+								<span>产品类别：白酒招商</span>
+								<span>所属企业：<a href="#">贵州茅台酒股份有限公司</a></span>
+							</div>
+							<div class="shux">
+								<span>市场报价：暂无报价</span>
+								<spa全国n>招商区域:全国</span>
+							</div>
+							<div class="enterbt">
+								<a href="#">我要代理</a>
+							</div>
+							
+							
+						</li>
+						<li>
+							<div class="pic">
+								<a href="#" target="_blank"><img src="../img/maotai.jpg"/></a>
+							</div>
+							<div class="titl">
+								<a href="#" target="_blank">贵州茅台酒</a>
+							</div>
+							<div class="shux">
+								<span>产品类别：白酒招商</span>
+								<span>所属企业：<a href="#" target="_blank">贵州茅台酒股份有限公司</a></span>
+							</div>
+							<div class="shux">
+								<span>市场报价：暂无报价</span>
+								<spa全国n>招商区域:全国</span>
+							</div>
+							<div class="enterbt">
+								<a href="#" target="_blank">我要代理</a>
+							</div>
+							
+							
+						</li>
+						<li>
+							<div class="pic">
+								<a href="#" target="_blank"><img src="../img/maotai.jpg"/></a>
+							</div>
+							<div class="titl">
+								<a href="#" target="_blank">贵州茅台酒</a>
+							</div>
+							<div class="shux">
+								<span>产品类别：白酒招商</span>
+								<span>所属企业：<a href="#">贵州茅台酒股份有限公司</a></span>
+							</div>
+							<div class="shux">
+								<span>市场报价：暂无报价</span>
+								<spa全国n>招商区域:全国</span>
+							</div>
+							<div class="enterbt">
+								<a href="#" target="_blank">我要代理</a>
+							</div>
+							
+							
+						</li>
+						<li>
+							<div class="pic">
+								<a href="#" target="_blank"><img src="../img/maotai.jpg"/></a>
+							</div>
+							<div class="titl">
+								<a href="#" target="_blank">贵州茅台酒</a>
+							</div>
+							<div class="shux">
+								<span>产品类别：白酒招商</span>
+								<span>所属企业：<a href="#" target="_blank">贵州茅台酒股份有限公司</a></span>
+							</div>
+							<div class="shux">
+								<span>市场报价：暂无报价</span>
+								<spa全国n>招商区域:全国</span>
+							</div>
+							<div class="enterbt">
+								<a href="#" target="_blank">我要代理</a>
+							</div>
+							
+							
+						</li>
+						<li>
+							<div class="pic">
+								<a href="#" target="_blank"><img src="../img/maotai.jpg"/></a>
+							</div>
+							<div class="titl">
+								<a href="#" target="_blank">贵州茅台酒</a>
+							</div>
+							<div class="shux">
+								<span>产品类别：白酒招商</span>
+								<span>所属企业：<a href="#" target="_blank">贵州茅台酒股份有限公司</a></span>
+							</div>
+							<div class="shux">
+								<span>市场报价：暂无报价</span>
+								<spa全国n>招商区域:全国</span>
+							</div>
+							<div class="enterbt">
+								<a href="#" target="_blank">我要代理</a>
+							</div>
+							
+							
+						</li>
+						<li>
+							<div class="pic">
+								<a href="#" target="_blank"><img src="../img/maotai.jpg"/></a>
+							</div>
+							<div class="titl">
+								<a href="#" target="_blank">贵州茅台酒</a>
+							</div>
+							<div class="shux">
+								<span>产品类别：白酒招商</span>
+								<span>所属企业：<a href="#" target="_blank">贵州茅台酒股份有限公司</a></span>
+							</div>
+							<div class="shux">
+								<span>市场报价：暂无报价</span>
+								<spa全国n>招商区域:全国</span>
+							</div>
+							<div class="enterbt">
+								<a href="#" target="_blank">我要代理</a>
+							</div>
+							
+							
+						</li>
+						<li>
+							<div class="pic">
+								<a href="#" target="_blank"><img src="../img/maotai.jpg"/></a>
+							</div>
+							<div class="titl">
+								<a href="#" target="_blank">贵州茅台酒</a>
+							</div>
+							<div class="shux">
+								<span>产品类别：白酒招商</span>
+								<span>所属企业：<a href="#" target="_blank">贵州茅台酒股份有限公司</a></span>
+							</div>
+							<div class="shux">
+								<span>市场报价：暂无报价</span>
+								<spa全国n>招商区域:全国</span>
+							</div>
+							<div class="enterbt">
+								<a href="#" target="_blank">我要代理</a>
+							</div>
+							
+							
+						</li>
+						<li>
+							<div class="pic">
+								<a href="#" target="_blank"><img src="../img/maotai.jpg"/></a>
+							</div>
+							<div class="titl">
+								<a href="#" target="_blank">贵州茅台酒</a>
+							</div>
+							<div class="shux">
+								<span>产品类别：白酒招商</span>
+								<span>所属企业：<a href="#" target="_blank">贵州茅台酒股份有限公司</a></span>
+							</div>
+							<div class="shux">
+								<span>市场报价：暂无报价</span>
+								<spa全国n>招商区域:全国</span>
+							</div>
+							<div class="enterbt">
+								<a href="#" target="_blank">我要代理</a>
+							</div>
+							
+							
+						</li>
+						<li>
+							<div class="pic">
+								<a href="#" target="_blank"><img src="../img/maotai.jpg"/></a>
+							</div>
+							<div class="titl">
+								<a href="#" target="_blank">贵州茅台酒</a>
+							</div>
+							<div class="shux">
+								<span>产品类别：白酒招商</span>
+								<span>所属企业：<a href="#" target="_blank">贵州茅台酒股份有限公司</a></span>
+							</div>
+							<div class="shux">
+								<span>市场报价：暂无报价</span>
+								<spa全国n>招商区域:全国</span>
+							</div>
+							<div class="enterbt">
+								<a href="#" target="_blank">我要代理</a>
+							</div>
+							
+							
+						</li>
+						<li>
+							<div class="pic">
+								<a href="#" target="_blank"><img src="../img/maotai.jpg"/></a>
+							</div>
+							<div class="titl">
+								<a href="#">贵州茅台酒</a>
+							</div>
+							<div class="shux">
+								<span>产品类别：白酒招商</span>
+								<span>所属企业：<a href="#" target="_blank">贵州茅台酒股份有限公司</a></span>
+							</div>
+							<div class="shux">
+								<span>市场报价：暂无报价</span>
+								<spa全国n>招商区域:全国</span>
+							</div>
+							<div class="enterbt">
+								<a href="#" target="_blank">我要代理</a>
+							</div>
+							
+							
+						</li>
+					</ul>
+					<div class="fenye">
+						
+					</div>
+				</div>
+				<div class="content_right">
+					<div class="kuai">
+						<h3>相关搜索</h3>
+						<a href="#" target="_blank">茅台迎宾酒</a>
+						<a href="#" target="_blank">茅台王子酒</a>
+						<a href="#" target="_blank">茅台</a>
+						<a href="#" target="_blank">茅台酒</a>
+						<a href="#" target="_blank">贵州茅台</a>
+						<a href="#" target="_blank">茅台酒厂</a>
+					</div>
+					<div class="kuai_2">
+						<a href="#" target="_blank">
+							<img src="../img/righ.jpg"/>
+						</a>
+					</div>
+					<div class="kuai_3">
+						<h3>推广产品</h3>
+						<ul>
+							<li>
+								<a href="#" target="_blank"><img src="../img/maotai.jpg"/></a>
+								<span><a href="#" target="_blank">茅台吉祥如意</a></span>
+							</li>
+							<li>
+								<a href="#" target="_blank"><img src="../img/maotai.jpg"/></a>
+								<span><a href="#" target="_blank">茅台吉祥如意</a></span>
+							</li>
+							<li>
+								<a href="#" target="_blank"><img src="../img/maotai.jpg"/></a>
+								<span><a href="#" target="_blank">茅台吉祥如意</a></span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div class="foot">
+				<div class="foot_link">
+					<a href="#" target="_blank">首页</a>
+					|
+					<a href="#" target="_blank">关于我们</a>
+					|
+					<a href="#" target="_blank">法律声明</a>
+					<span>Copyright 2010-2020 9928.TV All Rights Reserved 9928美酒招商网</span>
+				</div>
+			</div>
+	</body>
+</html>

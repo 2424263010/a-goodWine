@@ -1,5 +1,6 @@
+
+<script type="text/javascript" src="../../jquery-1.11.0.js" ></script>		
 <script src="../js/nav.js" type="text/javascript" charset="utf-8"></script>
-		
 	<body>
 		
 			<div class="hImg">
@@ -192,10 +193,7 @@
 									</div>
 									<div class="searchWine">
 										<label>
-											<a>热搜：</a>
-										<a href="#">老白干</a>
-										<a href="#">老白干</a>
-										<a href="#">老实打实白干</a>
+											
 									</label>
 										<span><a href="find.html"><img src="../img/sj.jpg"/></a></span>
 									
@@ -296,11 +294,24 @@
 			  	$(function(){
 					$(".navxiala").hover(function(){
 						$(".xialanav").css("display","block")
+						
 					},function(){
 						
 						$(".xialanav").css("display","none")
 					})
-	
+					$.get("http://47.112.21.225:8080/wine-0.0.1-SNAPSHOT/reselect.do",{},function(data){
+						var str="";
+						for (let i=0;i<data.data.length;i++) {
+							
+							str+=`
+								<a href="#">${data.data[i].name}</a>
+							`;
+							
+						}
+							  $(".searchWine label").html(`<a>热搜：</a>`+str);
+							  
+						})
+	             
 				})
 			  </script>
 		

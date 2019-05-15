@@ -62,5 +62,16 @@
 				$('#fix-div').load('main/fix-div.html');
 			})
 		</script>
+		<script type="text/javascript">
+			$(function(){
+				$.get("http://47.112.21.225:8080/wine-0.0.1-SNAPSHOT/company/list.do",{
+					code:0,
+					data:{},
+					msg:null
+				},function(data){
+					console.log(data);
+				})
+			})
+		</script>
 	</body>
 </html>
