@@ -36,7 +36,9 @@
 			</div>
 		</div>
 		<div class="sousuo03">
-			<img src="../img/xsf2.jpg" />
+			<img src="../img/xsf1.jpg" />
+			<img src="../img/xsf2.jpg" style="position: absolute;z-index: 1;top: 0;"/>
+			
 		</div>
 	</div>
 
@@ -127,6 +129,8 @@
 				height: 70px;
 				background: red;
 				float: right;
+				position: relative;
+				overflow: hidden;
 			}
 			.sousuo01{
 				width: 205px;
@@ -145,3 +149,19 @@
 				font-size: 12px;
 			}
 </style>
+
+<script src="../js/nav.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	//图片切换
+	$(function(){
+		$('.sousuo03').hover(function(){
+			$(this).find('img').eq(1).stop().animate({
+				'left':'440px'
+			},1000)
+		},function(){
+			$(this).find('img').eq(1).stop().animate({
+				'left':'0'
+			},1000)
+		})
+	})
+</script>
