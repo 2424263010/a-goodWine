@@ -480,14 +480,25 @@
 				})
 				
 				//网站导航
-				$(".cp_nav1").on("mouseover click",function(){
-					
-					$(".cp_nav").fadeToggle("fast",function(){
-						$(".cp_nav");
-					})
-					return false;
+				$(".cp_nav1").mouseover(function(){
+						$(".cp_nav").css("display","block");
+						$(".cp_nav").hover(function(){
+							$(".cp_nav").css("display","block");
+						},function(){
+							$(".cp_nav").css("display","none");
+						});
 				})
+				
 	
 			})
+			/* $.ajax({
+				type:'get',
+				url:'http://47.112.21.225:8080/wine-0.0.1-SNAPSHOT/liquor/selectBaiLiquor.do',
+				data:{},
+				success:function(data){
+					console.log(data);
+				}
+				
+			}); */
 		</script>
 	</html>

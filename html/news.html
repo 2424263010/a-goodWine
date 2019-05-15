@@ -800,6 +800,18 @@
 		</script>
 		
 		<script type="text/javascript">
+			$.post("http://47.112.21.225:8080/wine-0.0.1-SNAPSHOT/newgoods/list.do",{},function(data){
+				console.log(data)
+			})
+		</script>
+		
+		
+		
+		
+		
+		
+		
+		<script type="text/javascript">
 			$(function() {
 				$(".top").find("span").eq(0).css("background","orange");
 				$(".top").find("span").eq(0).mousemove(function(){

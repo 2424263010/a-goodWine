@@ -1,4 +1,4 @@
-<h3><span>公司介绍</span></h3>
+<!--<h3><span>公司介绍</span></h3>
 <div id="itrc-left">
 	<div class="itrcl-1">
 		<img src="" class="rzpic" />
@@ -23,7 +23,7 @@
 </div>
 <div id="itrc-right">
 	<img src="../img/01.jpg"/>
-</div>
+</div>-->
 
 <style type="text/css">
 	#gssy-main_introduc h3{
@@ -99,3 +99,41 @@
 		padding: 40px 30px;
 	}
 </style>
+
+<script type="text/javascript">	
+	$(function(){
+		$.get("http://47.112.21.225:8080/wine-0.0.1-SNAPSHOT/company/list.do",{},function(data){
+			var oData=data.data[4];
+			console.log(oData);
+			var str=`
+				<h3><span>公司介绍</span></h3>
+				<div id="itrc-left">
+					<div class="itrcl-1">
+						<img src="" class="rzpic" />
+						<b>${oData.flag} 第<font>3</font>年<span>认证时间：${oData.ms}</span><span>${oData.address}</span></b>
+						<div class="rzcont">
+							<ul>
+								<li>信誉指数：${oData.revalue}<img src="../img/hz.gif"  alt='中国美酒招商网诚信企业' /><img src="../img/hz.gif"  alt='中国美酒招商网诚信企业' /></li>
+								<li>经营模式：有限责任公司</li>
+								<li>工商注册信息：<a href="" target="_blank"><img  alt='中国美酒招商网诚信企业' src="../img/kb_08.gif" border="0" /></a></li>
+								<li>公司类别：${oData.ctype}</li>
+								<li>招商对象：暂无要求</li>
+				           </ul>
+				            <div class="clear"></div>
+				        </div>
+				
+					</div>
+					<div class="itrcl-2">
+						<p>　　${oData.introduce}【<a href="" target="_blank">查看详情</a>】</p>				
+					</div>
+				</div>
+				<div id="itrc-right">
+					<img src=${oData.logo}/>
+				</div>
+			`;
+			$('#gssy-main_introduc').append(str);
+			
+		})
+		
+	})
+</script>

@@ -3,13 +3,13 @@
 	包含所浏览公司的一些简单信息
 -->
 
-<div class="left">
+<!--<div class="left">
 	<img src="../img/01.jpg"/>
 	<h2>衡水禹德酒业有限公司<img src="../img/cxico.png" class="cxj"></h2>
     <p>
         <span>主营品牌：衡小干酒</span>
         <span>投资金额：其他</span>
-        <span>推荐指数数：<font>★★★★★</font></span>
+        <span>推荐指数：<font>★★★★★</font></span>
     </p>
 </div>
 <div class="right">
@@ -19,7 +19,7 @@
 		查看手机官网
 	</p>
 	<div><a href="" target="_blank">查看手机版</a></div>
-</div>
+</div>-->
 
 
 
@@ -101,5 +101,29 @@
 </style>
 
 <script type="text/javascript">
-	
+	$(function(){
+		$.get('http://47.112.21.225:8080/wine-0.0.1-SNAPSHOT/company/list.do',function(data){
+			oData=data.data[4];
+			str=`
+				<div class="left">
+				<img src="../img/01.jpg"/>
+				<h2>${oData.cname}<img src="../img/cxico.png" class="cxj"></h2>
+			    <p>
+			        <span>主营品牌：衡小干酒</span>
+			        <span>投资金额：${oData.size}</span>
+			        <span>推荐指数：<font>${oData.revalue}</font></span>
+			    </p>
+				</div>
+				<div class="right">
+			    	<img src="../img/02.jpg" alt="衡水禹德酒业有限公司手机网站" />
+			    	<p>
+						手机扫一扫，<br />
+						查看手机官网
+					</p>
+					<div><a href="" target="_blank">查看手机版</a></div>
+				</div>
+			`;
+			$('#header_2>div').append(str);
+		})
+	})
 </script>

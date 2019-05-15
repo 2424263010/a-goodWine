@@ -1,4 +1,4 @@
-<p>当前位置：<a href="">美酒招商网</a>><a href="">白酒招商</a>><a href="">衡水禹德酒业有限公司</a>>招商产品</p>
+<!--<p>当前位置：<a href="">美酒招商网</a>><a href="">白酒招商</a>><a href="">衡水禹德酒业有限公司</a>>招商产品</p>-->
 
 
 
@@ -22,3 +22,17 @@
 	}
 	
 </style>
+
+<script type="text/javascript">
+	$(function(){
+		$(function(){
+			$.get("http://47.112.21.225:8080/wine-0.0.1-SNAPSHOT/company/list.do",function(data){
+				oData=data.data[4];
+				str=`
+				<p>当前位置：<a href="">美酒招商网</a>><a href="">白酒招商</a>><a href="">${oData.cname}</a>>招商产品</p>
+				`;
+				$('#main_1').append(str);
+			})
+		})
+	})
+</script>

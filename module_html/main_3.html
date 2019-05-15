@@ -3,7 +3,7 @@
 	包含浏览公司的一些信息展示、地理位置
 -->
 
-<div id="m3-left">
+<!--<div id="m3-left">
 	<h2>衡水禹德酒业有限公司<img src="../img/isvip.png"/><img src="../img/cxico.png" /></h2>
 	<ul>
 		<li>招商电话：<span>张    总：18830816668 <br>
@@ -30,7 +30,7 @@
 </div>
 <div id="m3-right2">
 	
-</div>
+</div>-->
 
 <style type="text/css">
 	#m3-left{
@@ -92,5 +92,40 @@
 </style>
 
 <script type="text/javascript">
-	
+	$(function(){
+		$.get("http://47.112.21.225:8080/wine-0.0.1-SNAPSHOT/company/list.do",function(data){
+			var oData=data.data[4];
+			var str=`
+				<div id="m3-left">
+				<h2>${oData.cname}<img src="../img/isvip.png"/><img src="../img/cxico.png" /></h2>
+				<ul>
+					<li>招商电话：<span>张    总：18830816668 <br>
+					王经理：18832895719<br>
+					刘经理：18331807123<br>
+					王经理：15503289309<br>
+					张经理：18630589956<br>
+					曲经理：18630588516</span>
+					</li>
+					<li class="m3l">温馨提示：联系我时，请说是在9928美酒招商网上看到的，会有更多优惠，谢谢！</li>
+					<li>招商热线：${oData.phone}</li>
+					<li>微信号：${oData.weixin}</li>
+					<li>在线客服：<a target="_blank" href=""><img border="0" src="../img/QQjj.gif" alt="点击这里给我发消息" title="点击这里给我发消息"></a>&nbsp;</li>
+					<li>电子邮箱：laobaigan7989@163.com</li>
+					<li>企业网址：<a href=''>${oData.curl}</a></li>
+					<li>联系地址：${oData.address}</li>
+					<li class="m3l">温馨提示：${oData.cname}与美酒招商网强强联手，凡是在本网站签约成功，均可获得该公司优厚福利。</li>
+				</ul>
+			</div>
+			<div id="m3-right1">
+				<img src="../img/qrchart.jpg"/>
+				<p class="m3r11">${oData.cname}（手机微官网）</p>
+				<p class="m3r12">扫一扫，关注手机网站，<br/>留言受保护，免受打扰！</p>
+			</div>
+			<div id="m3-right2">
+				
+			</div>
+			`;
+			$('#main_3').append(str);
+		})
+	})
 </script>
