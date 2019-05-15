@@ -1,5 +1,5 @@
-<h2>衡水禹德酒业有限公司    招商热线：  <span>0318-8513696</span> <a href="" target="_blank"><img src="../img/QQjj.gif"/></a></h2>
-<a href="#main_4"><img src="../img/QQD1.gif"/></a>	
+<!--<h2>衡水禹德酒业有限公司    招商热线：  <span>0318-8513696</span> <a href="" target="_blank"><img src="../img/QQjj.gif"/></a></h2>
+<a href="#main_4"><img src="../img/QQD1.gif"/></a>	-->
 
 
 <style type="text/css">
@@ -23,3 +23,16 @@
 		margin-top: 10px;
 	}
 </style>
+
+<script type="text/javascript">
+	$(function(){
+		$.get("http://47.112.21.225:8080/wine-0.0.1-SNAPSHOT/company/list.do",function(data){
+			oData=data.data[4];
+			str=`<h2>${oData.cname}    招商热线：  <span>${oData.phone}</span> <a href="" target="_blank"><img src="../img/QQjj.gif"/></a></h2>
+<a href="#main_4"><img src="../img/QQD1.gif"/></a>	
+			`;
+			$("#fix-div").append(str);
+		})
+		
+	})
+</script>
